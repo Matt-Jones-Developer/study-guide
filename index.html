@@ -1,26 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Prework Study Guide</title>
-    </head>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Prework Study Guide</title>
+</head>
     <body>
+        <!-- header -->
         <header id="top">
-            <div class="container">
-                <h1>Bootcamp Study-Guide</h1>
-                <h2>Matt Jones</h2>
-                <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
-            </div>
+            <h1>Study Guide</h1>
+            <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
         </header>
+
         <main>
-            <!-- student code goes here -->
+            <!-- 4 topic sections with lists -->
+            <section class="card" id="html-section">
+                <h2>HTML</h2>
+                <ul>
+                    <li>The <code>&lt;base&gt;</code> element defines the base URL for a webpage.</li>
+                    <li>The <code>&lt;link>&gt;</code> element connects an external resource to the HTML document.</li>
+                    <li>The <code>&lt;meta>&gt;</code> element defines metadata such as the character set, description, keywords, author, and viewport.</li>
+                    <li>The <code>&lt;script&gt;</code> element embeds client-side scripts in the HTML document.</li>
+                    <li>The <code>&lt;head>&gt;</code> element contains information about the webpage.</li>
+                    <li>The <code>&lt;body>&gt;</code> element represents the visible content shown to the user.
+                        The body tag is a semantic, parent element, whereas a non-semantic, child element is, for example <code><div></div></code>.</li>
+                    <li>The <code>&lt;h1 h2 h3 h4 h5 h6&gt;</code> elements represent the level of heading a given text block represents.</li>
+                    <li>The <code>&lt;ul ol li&gt;</code> elements represent unordered lists, ordered lists, and list items. In essence, these HTML elements represent bulleted or numbered lists.</li>
+                    <li>The <code>&lt;img&gt;</code> element contains information about images that are displayed on the webpage. The <img> element can contain various attributes; the src attribute is the most important because it defines the location of the image.<br>
+                        * The `src` attribute defines the location, or source, of the image file.<br>
+                        * The `alt` attribute contains a text string that describes the appearance and functionality of the image.</li>
+                    <li>The <code>&lt;br&gt;</code> element creates a line of empty space, or a line break, between two blocks of content.</li>
+                    <li>The <code>&lt;a&gt;</code> element (which stands for anchor) creates links to the same webpage or other webpages.</li>
+                    <li>The <code>&lt;section&gt;</code> elements are semantic elements that define a section in a document that contains thematic content.</li>
+                </ul>
+            </section>
+         
+            <section class="card" id="css-section">
+                <h2>CSS</h2>
+                <ul>
+                    <li>Enter your CSS notes here</li>
+                  </ul>
+              </section>
+           
+              <section class="card" id="git-section">
+                <h2>Git</h2>
+                <ul>
+                    <li>To start interacting with GitHUb, cd into the appropriate folders:<br>
+                        cd bootcamp and cd prework-study-guide, then in VSCode, type 'code .' to access the workspace.</li>
+                    <li>git status: checks what branch we are currently on.</li>
+                    <li>git checkout -b branch-name: creates a new branch and switches to it.</li>
+                    <li>TIP: use git status again, to ensure which branch we are now in!</li>
+                    <li>git add -A: Stages file changes to be committed.</li>
+                    <li>git commit -m "update commit comment here: explain changes" to commit your new updates to the code.</li>
+                    <li>git push: to transfer all the changes to github.</li>
+                    <li>Within GitHub: view repo -> should see the new html file.</li>
+                    <li>Make it LIVE: settings -> Pages (under environment) Select 'None' and choose MAIN -> Save.</li>
+                    <li>Eventually the changes will update and you can view the new live page by selecting 'view website'.</li>
+
+                </ul>
+              </section>
+           
+              <section class="card" id="javascript-section">
+                <h2>JavaScript</h2>
+                <ul>
+                  <li>Enter your JavaScript notes here</li>
+                </ul>
+              </section>
         </main>
-        <footer>
-            <p>I can code!</p>
+        
+        <!-- footer -->
+        <footer class="footer">
+            <p>Designed & <code style="color: #A0FCD6;">coded</code> with <strong>love</strong> by <a
+                    href="https://github.com/Matt-Jones-Developer">Matt Jones</a>. &copy; 2022. All rights reserved.</p>
         </footer>
     </body>
 </html>
