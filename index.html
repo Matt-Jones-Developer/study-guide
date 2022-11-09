@@ -55,14 +55,22 @@
                     <li>TIP: use git status again, to ensure which branch we are now in!</li>
                     <li>git add -A: Stages file changes to be committed.</li>
                     <li>git commit -m "update commit comment here: explain changes" to commit your new updates to the code.</li>
-                    <li>git push: to transfer all the changes to github.</li>
+                    <li>git pull origin main: It is a good habit to always pull the base branch into your feature branch before pushing up any code.</li>
+                    <li>git push: to transfer all the changes to github. i.e: git push origin feature/add-html</li>
                     <li>Within GitHub: view repo -> should see the new html file.</li>
                     <li>Make it LIVE: settings -> Pages (under environment) Select 'None' and choose MAIN -> Save.</li>
                     <li>Eventually the changes will update and you can view the new live page by selecting 'view website'.</li>
-                    <li>To abort use git merge --abort</li>
+                    <li>To abort use git merge --abort</li><br>
                     <li>Rule 1 - Always rebase when pulling changes from origin/develop onto your local develop.<br>
-                        use git pull --rebase</li>
-
+                        use git pull --rebase.  Why? because if you are pulling from the origin and you have not made any changes to your local develop, 
+                        then git pull and git pull --rebase are the same. If you have made a few changes to your local develop that have not been pushed yet.<br>
+                        Also, you want to pull any changes you are missing from your origin to your local develop before you can push. 
+                        A regular git pull without rebase option may result in merge issues.</li>
+                    <li>git merge: Rule 2 - Merge when finishing a feature branch merge change back to develop.
+                        Use the following command, when you have made changes and want to merge changes back to develop.
+                        If fatal: No remote for the current branch. ... panic!</li>
+                    <li>In GitHUb: navigate to prework-study-guide -> click on pull request -> add new title and a comment, click Create Pull Request.</li>
+                    <li>Lastly: merge the branches: click 'Merge pull request' button. Done.</li>
                 </ul>
               </section>
            
