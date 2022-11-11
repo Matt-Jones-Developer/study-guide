@@ -25,6 +25,7 @@ img {
 }
 
 ul {
+    text-decoration: none;
     padding-left: 40px;
     font-size: 20px;
 }
@@ -34,9 +35,9 @@ p {
     font-size: 30px;
   }
 
-  .card {
-    width: 80%;
-    margin: 40px auto;
-    border: 5px solid gray;
-    box-shadow: 5px 10px #888888;
-  }
+.card {
+width: 80%;
+margin: 40px auto;
+border: 5px solid gray;
+box-shadow: 5px 10px #888888;
+}
